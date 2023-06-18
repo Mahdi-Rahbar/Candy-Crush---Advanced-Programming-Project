@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Player.cs" />
+    <Compile Include="SignInFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInFrm.Designer.cs">
+      <DependentUpon>SignInFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpFrm.Designer.cs">
+      <DependentUpon>SignUpFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpOrInFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +67,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SignInFrm.resx">
+      <DependentUpon>SignInFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpFrm.resx">
+      <DependentUpon>SignUpFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpOrInFrm.resx">
       <DependentUpon>SignUpOrInFrm.cs</DependentUpon>
     </EmbeddedResource>
