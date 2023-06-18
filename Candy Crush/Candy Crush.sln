@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candy Crush", "Candy Crush\Candy Crush.csproj", "{8EE026CC-C44E-4FB7-A9B8-BF2E6D23F3DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candy Crush", "Candy Crush\Candy Crush.csproj", "{D56B1087-928D-4972-8B12-06CF3DD9FE88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8EE026CC-C44E-4FB7-A9B8-BF2E6D23F3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EE026CC-C44E-4FB7-A9B8-BF2E6D23F3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EE026CC-C44E-4FB7-A9B8-BF2E6D23F3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EE026CC-C44E-4FB7-A9B8-BF2E6D23F3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56B1087-928D-4972-8B12-06CF3DD9FE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56B1087-928D-4972-8B12-06CF3DD9FE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56B1087-928D-4972-8B12-06CF3DD9FE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56B1087-928D-4972-8B12-06CF3DD9FE88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF6736D2-9E51-4E7D-9E9C-2A5E0B74E1B1}
+		SolutionGuid = {565D723C-5B81-40B8-A225-A57A0FC6DC79}
 	EndGlobalSection
 EndGlobal

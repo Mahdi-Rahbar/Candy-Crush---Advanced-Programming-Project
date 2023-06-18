@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Candy_Crush
 {
-    public partial class Form1 : Form
+    public partial class SignUPOrInFrm : Form
     {
-        public Form1()
+        public SignUPOrInFrm()
         {
             InitializeComponent();
         }

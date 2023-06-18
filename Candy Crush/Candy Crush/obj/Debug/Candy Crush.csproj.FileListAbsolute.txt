@@ -7,4 +7,4 @@ E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-
 E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy Crush.csproj.CoreCompileInputs.cache
 E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy Crush.exe
 E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy Crush.pdb
-E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy_Crush.Form1.resources
+E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy_Crush.SignUPOrInFrm.resources
