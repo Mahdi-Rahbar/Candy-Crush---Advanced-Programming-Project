@@ -32,5 +32,32 @@ namespace Candy_Crush
         {
             signInBtn.BackColor = Color.FromArgb(255, 255, 128);
         }
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+            SignInPlayer();
+            //var q = db.players.Where(w => w.Username == "trf");
+            //foreach (var item in q.ToList())
+            //{
+            //    db.players.Remove(item);
+            //    db.SaveChanges();
+            //}
+
+        }
+        private void SignInPlayer()
+        {
+            if (usernameTxt.Text == "" || passwordTxt.Text == "")
+            {
+                MessageBox.Show("Please fill in the blank fields !");
+                return;
+            }
+            if (Player.PlayerFinder(usernameTxt.Text, passwordTxt.Text) == false)
+            {
+                MessageBox.Show("Player not found !");
+                return;
+            }
+            PlayerMenuFrm playerMenu = new PlayerMenuFrm();
+            playerMenu.ShowDialog();
+        }
     }
 }

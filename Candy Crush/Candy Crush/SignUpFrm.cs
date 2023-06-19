@@ -35,9 +35,28 @@ namespace Candy_Crush
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
+            SignUpPlayer();
+        }
+
+        private void SignUpPlayer()
+        {
+            if(usernameTxt.Text == "" || passwordTxt.Text == "")
+            {
+                MessageBox.Show("Please fill in the blank fields !");
+                return;
+            }
+            if(Player.PlayerFinder(usernameTxt.Text) == true)
+            {
+                MessageBox.Show("Sorry ! This Username is already registered !");
+                return;
+            }
             string username = usernameTxt.Text;
             string password = passwordTxt.Text;
             Player playerSignUp = new Player(username, password);
+            DataBase dataBase = new DataBase();
+            dataBase.players.Add(playerSignUp);
+            dataBase.SaveChanges();
+            MessageBox.Show($"Welcome to Candy Crush \"{usernameTxt.Text}\" !");
         }
     }
 }

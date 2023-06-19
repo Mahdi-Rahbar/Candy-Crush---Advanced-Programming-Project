@@ -58,6 +58,12 @@
   <ItemGroup>
     <Compile Include="DataBase.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="PlayerMenuFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerMenuFrm.Designer.cs">
+      <DependentUpon>PlayerMenuFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignInFrm.cs">
       <SubType>Form</SubType>
     </Compile>

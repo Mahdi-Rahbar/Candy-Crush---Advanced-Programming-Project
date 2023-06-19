@@ -46,6 +46,7 @@ namespace Candy_Crush
             this.signInBtn.TabIndex = 9;
             this.signInBtn.Text = "Sign In";
             this.signInBtn.UseVisualStyleBackColor = false;
+            this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
             this.signInBtn.MouseEnter += new System.EventHandler(this.signInBtn_MouseEnter);
             this.signInBtn.MouseLeave += new System.EventHandler(this.signInBtn_MouseLeave);
             // 
