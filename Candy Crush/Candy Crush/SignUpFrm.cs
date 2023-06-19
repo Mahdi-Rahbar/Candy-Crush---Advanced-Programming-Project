@@ -32,5 +32,12 @@ namespace Candy_Crush
         {
             signUpBtn.BackColor = Color.FromArgb(255, 255, 128);
         }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+            string username = usernameTxt.Text;
+            string password = passwordTxt.Text;
+            Player playerSignUp = new Player(username, password);
+        }
     }
 }

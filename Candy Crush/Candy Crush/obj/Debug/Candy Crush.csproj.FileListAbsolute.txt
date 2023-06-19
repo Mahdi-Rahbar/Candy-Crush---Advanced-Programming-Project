@@ -10,3 +10,8 @@ E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-
 E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy_Crush.SignUPOrInFrm.resources
 E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy_Crush.SignUpFrm.resources
 E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy_Crush.SignInFrm.resources
+E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\bin\Debug\EntityFramework.dll
+E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\bin\Debug\EntityFramework.SqlServer.dll
+E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\bin\Debug\EntityFramework.xml
+E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\bin\Debug\EntityFramework.SqlServer.xml
+E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Candy Crush\Candy Crush\obj\Debug\Candy Crush.csproj.CopyComplete

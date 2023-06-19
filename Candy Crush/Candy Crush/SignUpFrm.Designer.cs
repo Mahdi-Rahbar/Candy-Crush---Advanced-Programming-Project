@@ -59,18 +59,18 @@ namespace Candy_Crush
             // 
             // usernameTxt
             // 
-            this.usernameTxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTxt.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTxt.Location = new System.Drawing.Point(120, 95);
             this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(228, 39);
+            this.usernameTxt.Size = new System.Drawing.Size(228, 38);
             this.usernameTxt.TabIndex = 2;
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxt.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTxt.Location = new System.Drawing.Point(120, 249);
             this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(228, 39);
+            this.passwordTxt.Size = new System.Drawing.Size(228, 38);
             this.passwordTxt.TabIndex = 3;
             // 
             // signUpBtn
@@ -83,6 +83,7 @@ namespace Candy_Crush
             this.signUpBtn.TabIndex = 4;
             this.signUpBtn.Text = "Sign Up";
             this.signUpBtn.UseVisualStyleBackColor = false;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             this.signUpBtn.MouseEnter += new System.EventHandler(this.signUpBtn_MouseEnter);
             this.signUpBtn.MouseLeave += new System.EventHandler(this.signUpBtn_MouseLeave);
             // 

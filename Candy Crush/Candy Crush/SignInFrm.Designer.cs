@@ -51,18 +51,19 @@ namespace Candy_Crush
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxt.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTxt.Location = new System.Drawing.Point(118, 252);
             this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(228, 39);
+            this.passwordTxt.PasswordChar = '*';
+            this.passwordTxt.Size = new System.Drawing.Size(228, 38);
             this.passwordTxt.TabIndex = 8;
             // 
             // usernameTxt
             // 
-            this.usernameTxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTxt.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTxt.Location = new System.Drawing.Point(118, 98);
             this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(228, 39);
+            this.usernameTxt.Size = new System.Drawing.Size(228, 38);
             this.usernameTxt.TabIndex = 7;
             // 
             // passwordLbl
