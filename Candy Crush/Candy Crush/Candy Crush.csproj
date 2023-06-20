@@ -57,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
+    <Compile Include="GameFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameFrm.Designer.cs">
+      <DependentUpon>GameFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="PlayerMenuFrm.cs">
       <SubType>Form</SubType>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameFrm.resx">
+      <DependentUpon>GameFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerMenuFrm.resx">
+      <DependentUpon>PlayerMenuFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignInFrm.resx">
       <DependentUpon>SignInFrm.cs</DependentUpon>
     </EmbeddedResource>

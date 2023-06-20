@@ -57,7 +57,10 @@ namespace Candy_Crush
                 return;
             }
             PlayerMenuFrm playerMenu = new PlayerMenuFrm();
+            playerMenu.playerName = usernameTxt.Text;
+            this.Hide();
             playerMenu.ShowDialog();
+            this.Close();
         }
     }
 }
