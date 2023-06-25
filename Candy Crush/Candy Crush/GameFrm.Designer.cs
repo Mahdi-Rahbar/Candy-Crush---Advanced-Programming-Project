@@ -30,18 +30,18 @@ namespace Candy_Crush
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameFrm));
-            this.candy1 = new System.Windows.Forms.PictureBox();
-            this.candy2 = new System.Windows.Forms.PictureBox();
-            this.candy3 = new System.Windows.Forms.PictureBox();
-            this.candy4 = new System.Windows.Forms.PictureBox();
-            this.candy5 = new System.Windows.Forms.PictureBox();
-            this.candy6 = new System.Windows.Forms.PictureBox();
+            this.candy01 = new System.Windows.Forms.PictureBox();
+            this.candy02 = new System.Windows.Forms.PictureBox();
+            this.candy03 = new System.Windows.Forms.PictureBox();
+            this.candy04 = new System.Windows.Forms.PictureBox();
+            this.candy05 = new System.Windows.Forms.PictureBox();
+            this.candy06 = new System.Windows.Forms.PictureBox();
             this.candy12 = new System.Windows.Forms.PictureBox();
             this.candy10 = new System.Windows.Forms.PictureBox();
             this.candy11 = new System.Windows.Forms.PictureBox();
-            this.candy9 = new System.Windows.Forms.PictureBox();
-            this.candy8 = new System.Windows.Forms.PictureBox();
-            this.candy7 = new System.Windows.Forms.PictureBox();
+            this.candy09 = new System.Windows.Forms.PictureBox();
+            this.candy08 = new System.Windows.Forms.PictureBox();
+            this.candy07 = new System.Windows.Forms.PictureBox();
             this.candy24 = new System.Windows.Forms.PictureBox();
             this.candy22 = new System.Windows.Forms.PictureBox();
             this.candy23 = new System.Windows.Forms.PictureBox();
@@ -66,18 +66,19 @@ namespace Candy_Crush
             this.candy27 = new System.Windows.Forms.PictureBox();
             this.candy26 = new System.Windows.Forms.PictureBox();
             this.candy25 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.candy1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy6)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.candy01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy06)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy23)).BeginInit();
@@ -102,85 +103,86 @@ namespace Candy_Crush
             ((System.ComponentModel.ISupportInitialize)(this.candy27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // candy1
+            // candy01
             // 
-            this.candy1.BackColor = System.Drawing.Color.Transparent;
-            this.candy1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy1.BackgroundImage")));
-            this.candy1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy1.Location = new System.Drawing.Point(226, 177);
-            this.candy1.Name = "candy1";
-            this.candy1.Size = new System.Drawing.Size(70, 58);
-            this.candy1.TabIndex = 0;
-            this.candy1.TabStop = false;
-            this.candy1.Tag = "red";
-            this.candy1.Click += new System.EventHandler(this.CandySelect);
+            this.candy01.BackColor = System.Drawing.Color.Transparent;
+            this.candy01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy01.BackgroundImage")));
+            this.candy01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy01.Location = new System.Drawing.Point(226, 177);
+            this.candy01.Name = "candy01";
+            this.candy01.Size = new System.Drawing.Size(70, 58);
+            this.candy01.TabIndex = 0;
+            this.candy01.TabStop = false;
+            this.candy01.Tag = "red";
+            this.candy01.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy2
+            // candy02
             // 
-            this.candy2.BackColor = System.Drawing.Color.Transparent;
-            this.candy2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy2.BackgroundImage")));
-            this.candy2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy2.Location = new System.Drawing.Point(317, 177);
-            this.candy2.Name = "candy2";
-            this.candy2.Size = new System.Drawing.Size(70, 58);
-            this.candy2.TabIndex = 0;
-            this.candy2.TabStop = false;
-            this.candy2.Tag = "green";
-            this.candy2.Click += new System.EventHandler(this.CandySelect);
+            this.candy02.BackColor = System.Drawing.Color.Transparent;
+            this.candy02.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy02.BackgroundImage")));
+            this.candy02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy02.Location = new System.Drawing.Point(317, 177);
+            this.candy02.Name = "candy02";
+            this.candy02.Size = new System.Drawing.Size(70, 58);
+            this.candy02.TabIndex = 0;
+            this.candy02.TabStop = false;
+            this.candy02.Tag = "green";
+            this.candy02.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy3
+            // candy03
             // 
-            this.candy3.BackColor = System.Drawing.Color.Transparent;
-            this.candy3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy3.BackgroundImage")));
-            this.candy3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy3.Location = new System.Drawing.Point(409, 177);
-            this.candy3.Name = "candy3";
-            this.candy3.Size = new System.Drawing.Size(70, 58);
-            this.candy3.TabIndex = 0;
-            this.candy3.TabStop = false;
-            this.candy3.Tag = "yellow";
-            this.candy3.Click += new System.EventHandler(this.CandySelect);
+            this.candy03.BackColor = System.Drawing.Color.Transparent;
+            this.candy03.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy03.BackgroundImage")));
+            this.candy03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy03.Location = new System.Drawing.Point(409, 177);
+            this.candy03.Name = "candy03";
+            this.candy03.Size = new System.Drawing.Size(70, 58);
+            this.candy03.TabIndex = 0;
+            this.candy03.TabStop = false;
+            this.candy03.Tag = "yellow";
+            this.candy03.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy4
+            // candy04
             // 
-            this.candy4.BackColor = System.Drawing.Color.Transparent;
-            this.candy4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy4.BackgroundImage")));
-            this.candy4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy4.Location = new System.Drawing.Point(501, 177);
-            this.candy4.Name = "candy4";
-            this.candy4.Size = new System.Drawing.Size(70, 58);
-            this.candy4.TabIndex = 0;
-            this.candy4.TabStop = false;
-            this.candy4.Tag = "blue";
-            this.candy4.Click += new System.EventHandler(this.CandySelect);
+            this.candy04.BackColor = System.Drawing.Color.Transparent;
+            this.candy04.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy04.BackgroundImage")));
+            this.candy04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy04.Location = new System.Drawing.Point(501, 177);
+            this.candy04.Name = "candy04";
+            this.candy04.Size = new System.Drawing.Size(70, 58);
+            this.candy04.TabIndex = 0;
+            this.candy04.TabStop = false;
+            this.candy04.Tag = "blue";
+            this.candy04.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy5
+            // candy05
             // 
-            this.candy5.BackColor = System.Drawing.Color.Transparent;
-            this.candy5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy5.BackgroundImage")));
-            this.candy5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy5.Location = new System.Drawing.Point(593, 177);
-            this.candy5.Name = "candy5";
-            this.candy5.Size = new System.Drawing.Size(70, 58);
-            this.candy5.TabIndex = 0;
-            this.candy5.TabStop = false;
-            this.candy5.Tag = "red";
-            this.candy5.Click += new System.EventHandler(this.CandySelect);
+            this.candy05.BackColor = System.Drawing.Color.Transparent;
+            this.candy05.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy05.BackgroundImage")));
+            this.candy05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy05.Location = new System.Drawing.Point(593, 177);
+            this.candy05.Name = "candy05";
+            this.candy05.Size = new System.Drawing.Size(70, 58);
+            this.candy05.TabIndex = 0;
+            this.candy05.TabStop = false;
+            this.candy05.Tag = "red";
+            this.candy05.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy6
+            // candy06
             // 
-            this.candy6.BackColor = System.Drawing.Color.Transparent;
-            this.candy6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy6.BackgroundImage")));
-            this.candy6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy6.Location = new System.Drawing.Point(685, 177);
-            this.candy6.Name = "candy6";
-            this.candy6.Size = new System.Drawing.Size(70, 58);
-            this.candy6.TabIndex = 0;
-            this.candy6.TabStop = false;
-            this.candy6.Tag = "green";
-            this.candy6.Click += new System.EventHandler(this.CandySelect);
+            this.candy06.BackColor = System.Drawing.Color.Transparent;
+            this.candy06.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy06.BackgroundImage")));
+            this.candy06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy06.Location = new System.Drawing.Point(685, 177);
+            this.candy06.Name = "candy06";
+            this.candy06.Size = new System.Drawing.Size(70, 58);
+            this.candy06.TabIndex = 0;
+            this.candy06.TabStop = false;
+            this.candy06.Tag = "green";
+            this.candy06.Click += new System.EventHandler(this.CandySelect);
             // 
             // candy12
             // 
@@ -221,44 +223,44 @@ namespace Candy_Crush
             this.candy11.Tag = "yellow";
             this.candy11.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy9
+            // candy09
             // 
-            this.candy9.BackColor = System.Drawing.Color.Transparent;
-            this.candy9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy9.BackgroundImage")));
-            this.candy9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy9.Location = new System.Drawing.Point(409, 262);
-            this.candy9.Name = "candy9";
-            this.candy9.Size = new System.Drawing.Size(70, 58);
-            this.candy9.TabIndex = 4;
-            this.candy9.TabStop = false;
-            this.candy9.Tag = "green";
-            this.candy9.Click += new System.EventHandler(this.CandySelect);
+            this.candy09.BackColor = System.Drawing.Color.Transparent;
+            this.candy09.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy09.BackgroundImage")));
+            this.candy09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy09.Location = new System.Drawing.Point(409, 262);
+            this.candy09.Name = "candy09";
+            this.candy09.Size = new System.Drawing.Size(70, 58);
+            this.candy09.TabIndex = 4;
+            this.candy09.TabStop = false;
+            this.candy09.Tag = "green";
+            this.candy09.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy8
+            // candy08
             // 
-            this.candy8.BackColor = System.Drawing.Color.Transparent;
-            this.candy8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy8.BackgroundImage")));
-            this.candy8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy8.Location = new System.Drawing.Point(317, 262);
-            this.candy8.Name = "candy8";
-            this.candy8.Size = new System.Drawing.Size(70, 58);
-            this.candy8.TabIndex = 5;
-            this.candy8.TabStop = false;
-            this.candy8.Tag = "red";
-            this.candy8.Click += new System.EventHandler(this.CandySelect);
+            this.candy08.BackColor = System.Drawing.Color.Transparent;
+            this.candy08.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy08.BackgroundImage")));
+            this.candy08.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy08.Location = new System.Drawing.Point(317, 262);
+            this.candy08.Name = "candy08";
+            this.candy08.Size = new System.Drawing.Size(70, 58);
+            this.candy08.TabIndex = 5;
+            this.candy08.TabStop = false;
+            this.candy08.Tag = "red";
+            this.candy08.Click += new System.EventHandler(this.CandySelect);
             // 
-            // candy7
+            // candy07
             // 
-            this.candy7.BackColor = System.Drawing.Color.Transparent;
-            this.candy7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy7.BackgroundImage")));
-            this.candy7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.candy7.Location = new System.Drawing.Point(226, 262);
-            this.candy7.Name = "candy7";
-            this.candy7.Size = new System.Drawing.Size(70, 58);
-            this.candy7.TabIndex = 6;
-            this.candy7.TabStop = false;
-            this.candy7.Tag = "blue";
-            this.candy7.Click += new System.EventHandler(this.CandySelect);
+            this.candy07.BackColor = System.Drawing.Color.Transparent;
+            this.candy07.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("candy07.BackgroundImage")));
+            this.candy07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.candy07.Location = new System.Drawing.Point(226, 262);
+            this.candy07.Name = "candy07";
+            this.candy07.Size = new System.Drawing.Size(70, 58);
+            this.candy07.TabIndex = 6;
+            this.candy07.TabStop = false;
+            this.candy07.Tag = "blue";
+            this.candy07.Click += new System.EventHandler(this.CandySelect);
             // 
             // candy24
             // 
@@ -572,6 +574,15 @@ namespace Candy_Crush
             this.candy25.Tag = "red";
             this.candy25.Click += new System.EventHandler(this.CandySelect);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(456, 713);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(82, 55);
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // GameFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -580,6 +591,7 @@ namespace Candy_Crush
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 953);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.candy36);
             this.Controls.Add(this.candy34);
             this.Controls.Add(this.candy35);
@@ -607,15 +619,15 @@ namespace Candy_Crush
             this.Controls.Add(this.candy12);
             this.Controls.Add(this.candy10);
             this.Controls.Add(this.candy11);
-            this.Controls.Add(this.candy9);
-            this.Controls.Add(this.candy8);
-            this.Controls.Add(this.candy7);
-            this.Controls.Add(this.candy6);
-            this.Controls.Add(this.candy4);
-            this.Controls.Add(this.candy5);
-            this.Controls.Add(this.candy3);
-            this.Controls.Add(this.candy2);
-            this.Controls.Add(this.candy1);
+            this.Controls.Add(this.candy09);
+            this.Controls.Add(this.candy08);
+            this.Controls.Add(this.candy07);
+            this.Controls.Add(this.candy06);
+            this.Controls.Add(this.candy04);
+            this.Controls.Add(this.candy05);
+            this.Controls.Add(this.candy03);
+            this.Controls.Add(this.candy02);
+            this.Controls.Add(this.candy01);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -625,18 +637,18 @@ namespace Candy_Crush
             this.Text = "Candy Crush";
             this.Load += new System.EventHandler(this.GameFrm_Load_1);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.changingPicKey);
-            ((System.ComponentModel.ISupportInitialize)(this.candy1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy06)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candy7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candy07)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy23)).EndInit();
@@ -661,24 +673,25 @@ namespace Candy_Crush
             ((System.ComponentModel.ISupportInitialize)(this.candy27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox candy1;
-        private System.Windows.Forms.PictureBox candy2;
-        private System.Windows.Forms.PictureBox candy3;
-        private System.Windows.Forms.PictureBox candy4;
-        private System.Windows.Forms.PictureBox candy5;
-        private System.Windows.Forms.PictureBox candy6;
+        private System.Windows.Forms.PictureBox candy01;
+        private System.Windows.Forms.PictureBox candy02;
+        private System.Windows.Forms.PictureBox candy03;
+        private System.Windows.Forms.PictureBox candy04;
+        private System.Windows.Forms.PictureBox candy05;
+        private System.Windows.Forms.PictureBox candy06;
         private System.Windows.Forms.PictureBox candy12;
         private System.Windows.Forms.PictureBox candy10;
         private System.Windows.Forms.PictureBox candy11;
-        private System.Windows.Forms.PictureBox candy9;
-        private System.Windows.Forms.PictureBox candy8;
-        private System.Windows.Forms.PictureBox candy7;
+        private System.Windows.Forms.PictureBox candy09;
+        private System.Windows.Forms.PictureBox candy08;
+        private System.Windows.Forms.PictureBox candy07;
         private System.Windows.Forms.PictureBox candy24;
         private System.Windows.Forms.PictureBox candy22;
         private System.Windows.Forms.PictureBox candy23;
@@ -703,5 +716,6 @@ namespace Candy_Crush
         private System.Windows.Forms.PictureBox candy27;
         private System.Windows.Forms.PictureBox candy26;
         private System.Windows.Forms.PictureBox candy25;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
