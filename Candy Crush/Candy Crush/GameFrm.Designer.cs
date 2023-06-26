@@ -29,6 +29,7 @@ namespace Candy_Crush
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameFrm));
             this.candy01 = new System.Windows.Forms.PictureBox();
             this.candy02 = new System.Windows.Forms.PictureBox();
@@ -66,7 +67,10 @@ namespace Candy_Crush
             this.candy27 = new System.Windows.Forms.PictureBox();
             this.candy26 = new System.Windows.Forms.PictureBox();
             this.candy25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rearrengeBtn = new System.Windows.Forms.PictureBox();
+            this.scoreLbl = new System.Windows.Forms.Label();
+            this.timerLbl = new System.Windows.Forms.Label();
+            this.timerTmr = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.candy01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy03)).BeginInit();
@@ -103,7 +107,7 @@ namespace Candy_Crush
             ((System.ComponentModel.ISupportInitialize)(this.candy27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rearrengeBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // candy01
@@ -574,14 +578,47 @@ namespace Candy_Crush
             this.candy25.Tag = "red";
             this.candy25.Click += new System.EventHandler(this.CandySelect);
             // 
-            // pictureBox1
+            // rearrengeBtn
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(456, 713);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 55);
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.rearrengeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.rearrengeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rearrengeBtn.BackgroundImage")));
+            this.rearrengeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.rearrengeBtn.Location = new System.Drawing.Point(397, 705);
+            this.rearrengeBtn.Name = "rearrengeBtn";
+            this.rearrengeBtn.Size = new System.Drawing.Size(190, 92);
+            this.rearrengeBtn.TabIndex = 31;
+            this.rearrengeBtn.TabStop = false;
+            this.rearrengeBtn.Click += new System.EventHandler(this.rearrengeBtn_Click);
+            this.rearrengeBtn.MouseEnter += new System.EventHandler(this.rearrengeBtn_MouseEnter);
+            this.rearrengeBtn.MouseLeave += new System.EventHandler(this.rearrengeBtn_MouseLeave);
+            // 
+            // scoreLbl
+            // 
+            this.scoreLbl.AutoSize = true;
+            this.scoreLbl.BackColor = System.Drawing.Color.Transparent;
+            this.scoreLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLbl.Location = new System.Drawing.Point(38, 35);
+            this.scoreLbl.Name = "scoreLbl";
+            this.scoreLbl.Size = new System.Drawing.Size(127, 32);
+            this.scoreLbl.TabIndex = 32;
+            this.scoreLbl.Text = "Score : 0";
+            // 
+            // timerLbl
+            // 
+            this.timerLbl.AutoSize = true;
+            this.timerLbl.BackColor = System.Drawing.Color.Transparent;
+            this.timerLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timerLbl.Location = new System.Drawing.Point(801, 35);
+            this.timerLbl.Name = "timerLbl";
+            this.timerLbl.Size = new System.Drawing.Size(132, 32);
+            this.timerLbl.TabIndex = 33;
+            this.timerLbl.Text = "Time : 60";
+            // 
+            // timerTmr
+            // 
+            this.timerTmr.Enabled = true;
+            this.timerTmr.Interval = 1000;
+            this.timerTmr.Tick += new System.EventHandler(this.timerTmr_Tick);
             // 
             // GameFrm
             // 
@@ -591,7 +628,9 @@ namespace Candy_Crush
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 953);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.timerLbl);
+            this.Controls.Add(this.scoreLbl);
+            this.Controls.Add(this.rearrengeBtn);
             this.Controls.Add(this.candy36);
             this.Controls.Add(this.candy34);
             this.Controls.Add(this.candy35);
@@ -673,8 +712,9 @@ namespace Candy_Crush
             ((System.ComponentModel.ISupportInitialize)(this.candy27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candy25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rearrengeBtn)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -716,6 +756,9 @@ namespace Candy_Crush
         private System.Windows.Forms.PictureBox candy27;
         private System.Windows.Forms.PictureBox candy26;
         private System.Windows.Forms.PictureBox candy25;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox rearrengeBtn;
+        private System.Windows.Forms.Label scoreLbl;
+        private System.Windows.Forms.Label timerLbl;
+        private System.Windows.Forms.Timer timerTmr;
     }
 }

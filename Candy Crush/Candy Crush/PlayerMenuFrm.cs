@@ -63,6 +63,7 @@ namespace Candy_Crush
         private void playBtn_Click(object sender, EventArgs e)
         {
             GameFrm gameForm = new GameFrm();
+            gameForm.playerUsername = playerName;
             this.Hide();
             gameForm.ShowDialog();
             this.Close();

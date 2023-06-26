@@ -49,17 +49,58 @@ namespace Candy_Crush
             }
             return false;
         }
-        public static int ReturnPlayerId(string username)
+
+        public static void SetPlayerGame(string username)
         {
             DataBase dataBase = new DataBase();
             foreach (var player in dataBase.players.ToList())
             {
                 if (username == player.Username)
                 {
-                    return player.Id;
+                    player.Games += 1;
+                    dataBase.SaveChanges();
                 }
             }
-            return 0;
         }
+
+        public static void SetPlayerWin(string username, int score)
+        {
+            DataBase dataBase = new DataBase();
+            foreach (var player in dataBase.players.ToList())
+            {
+                if (username == player.Username)
+                {
+                    player.Wins += 1;
+                    player.Score = score;
+                    dataBase.SaveChanges();
+                }
+            }
+        }
+
+        public static void SetPlayerLose(string username)
+        {
+            DataBase dataBase = new DataBase();
+            foreach (var player in dataBase.players.ToList())
+            {
+                if (username == player.Username)
+                {
+                    player.Losses += 1;
+                    dataBase.SaveChanges();
+                }
+            }
+        }
+
+        //public static int ReturnPlayerId(string username)
+        //{
+        //    DataBase dataBase = new DataBase();
+        //    foreach (var player in dataBase.players.ToList())
+        //    {
+        //        if (username == player.Username)
+        //        {
+        //            return player.Id;
+        //        }
+        //    }
+        //    return 0;
+        //}
     }
 }

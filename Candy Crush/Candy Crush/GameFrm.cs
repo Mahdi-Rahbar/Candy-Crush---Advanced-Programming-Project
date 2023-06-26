@@ -13,6 +13,10 @@ namespace Candy_Crush
 {
     public partial class GameFrm : Form
     {
+        int seconds = 60;
+        int score = 0;
+        bool oneTimeWin = true;
+        public string playerUsername;
         PictureBox beforeCandySelected;
         bool oneTime = false;
         PictureBox selectedCandy;
@@ -42,7 +46,8 @@ namespace Candy_Crush
             candyList.Sort((x, y) => x.Name.CompareTo(y.Name));
             VerticalCheck(candyList);
             HorizontalCheck(candyList);
-            
+            scoreLbl.Text = $"Score : {score}";
+            SetWin();
         }
 
         //private void GameFrm_Load(object sender, EventArgs e)
@@ -207,6 +212,8 @@ namespace Candy_Crush
                     y1 = y2;
                     y2 += 70;
                     SetCandies(candySameList);
+                    playSound();
+                    SetScore(candySameList);
                     enableKey = true;
                     enableSelect = true;
                     undoL = false;
@@ -236,6 +243,8 @@ namespace Candy_Crush
                     else if (candy.Tag != firstCandy.Tag && candySameList.Count >= 3)
                     {
                         SetCandies(candySameList);
+                        playSound();
+                        SetScore(candySameList);
                         enableKey = true;
                         enableSelect = true;
                         undoL = false;
@@ -248,6 +257,8 @@ namespace Candy_Crush
                     if (i == 36 && candySameList.Count >= 3)
                     {
                         SetCandies(candySameList);
+                        playSound();
+                        SetScore(candySameList);
                         enableKey = true;
                         enableSelect = true;
                         undoL = false;
@@ -287,6 +298,8 @@ namespace Candy_Crush
                         x1 = x2;
                         x2 += 70;
                         SetCandies(candySameList);
+                        playSound();
+                        SetScore(candySameList);
                         enableKey = true;
                         enableSelect = true;
                         undoL = false;
@@ -317,6 +330,8 @@ namespace Candy_Crush
                         {
 
                             SetCandies(candySameList);
+                            playSound();
+                            SetScore(candySameList);
                             enableKey = true;
                             enableSelect = true;
                             undoL = false;
@@ -329,6 +344,8 @@ namespace Candy_Crush
                         if (i == 36 && candySameList.Count >= 3)
                         {
                             SetCandies(candySameList);
+                            playSound();
+                            SetScore(candySameList);
                             enableKey = true;
                             enableSelect = true;
                             undoL = false;
@@ -385,17 +402,95 @@ namespace Candy_Crush
         private void GameFrm_Load_1(object sender, EventArgs e)
         {
             initTimer();
+            timerTmr.Start();
+            Player.SetPlayerGame(playerUsername);
             SoundPlayer sound = new SoundPlayer();
             sound.Stop();
             SetFormLocation();
-            var candyList = this.Controls.OfType<PictureBox>().Where(w => w.Name.StartsWith("candy")).ToList();
+            scoreLbl.Text = $"Score : {score}";
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+            
+        //}
+
+        private void playSound()
+        {
+            string path = @"E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Assets\GetScore.wav";
+            SoundPlayer musicPlayer = new SoundPlayer();
+            musicPlayer.SoundLocation = path;
+            musicPlayer.Play();
+        }
+
+
+        private void SetScore(List<PictureBox> sameCandyList)
+        {
+            if(sameCandyList[0].Tag == "red")
+            {
+                score += 2;
+            }
+            else if (sameCandyList[0].Tag == "green")
+            {
+                score += 4;
+            }
+            else if (sameCandyList[0].Tag == "blue")
+            {
+                score += 6;
+            }
+            else if (sameCandyList[0].Tag == "yellow")
+            {
+                score += 8;
+            }
+        }
+
+        private void rearrengeBtn_Click(object sender, EventArgs e)
         {
             var candyList = this.Controls.OfType<PictureBox>().Where(w => w.Name.StartsWith("candy")).ToList();
             SetCandies(candyList);
         }
 
+        private void rearrengeBtn_MouseEnter(object sender, EventArgs e)
+        {
+            rearrengeBtn.Scale(1.02f);
+        }
+
+        private void rearrengeBtn_MouseLeave(object sender, EventArgs e)
+        {
+            rearrengeBtn.Scale(1 / 1.02f);
+        }
+
+        private void timerTmr_Tick(object sender, EventArgs e)
+        {
+            seconds -= 1;
+            timerLbl.Text = $"Time : {seconds.ToString()}";
+            if(seconds == 0 || oneTimeWin == false)
+            {
+                timerTmr.Stop();
+                if(oneTimeWin == true)
+                {
+                    SetLose();
+                }
+            }
+        }
+
+        private void SetWin()
+        {
+            if(score >= 100 && oneTimeWin == true)
+            {
+                oneTimeWin = false;
+                WinFrm winForm = new WinFrm();
+                winForm.playerUsername = playerUsername;
+                winForm.score = score;
+                winForm.ShowDialog();
+            }
+        }
+        private void SetLose()
+        {
+            LoseFrm loseForm = new LoseFrm();
+            loseForm.playerUsername = playerUsername;
+            loseForm.score = score;
+            loseForm.ShowDialog();
+        }
     }
 }
