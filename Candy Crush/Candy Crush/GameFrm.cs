@@ -33,12 +33,17 @@ namespace Candy_Crush
             InitializeComponent();
         }
 
+
+
         public void initTimer()
         {
             time.Interval = (500);
             time.Tick += new EventHandler(timeMethod);
             time.Start();
         }
+
+
+
 
         private void timeMethod(object sender, EventArgs e)
         {
@@ -50,9 +55,13 @@ namespace Candy_Crush
             SetWin();
         }
 
+
+
         //private void GameFrm_Load(object sender, EventArgs e)
         //{
         //}
+
+
 
         private void CandySelect(object sender, EventArgs e)
         {
@@ -63,6 +72,9 @@ namespace Candy_Crush
                 selectedCandy = (PictureBox)sender;
             }
         }
+
+
+
 
         private void changingPicKey(object sender, KeyEventArgs e)
         {
@@ -134,6 +146,9 @@ namespace Candy_Crush
             }
         }
 
+
+
+
         private void SetFormLocation() => this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
 
         private void CandySelect(PictureBox candy)
@@ -145,6 +160,8 @@ namespace Candy_Crush
             candy.BackColor = Color.White;
             oneTime = true;
         }
+
+
 
         private void SwapBackgroundImage(List<PictureBox> candyList, string key)
         {
@@ -174,6 +191,9 @@ namespace Candy_Crush
             }
 
         }
+
+
+
 
         private void ChangePicTag(PictureBox candy)
         {
@@ -273,11 +293,12 @@ namespace Candy_Crush
 
 
 
+
         private void VerticalCheck(List<PictureBox> candyList)
         {
             List<PictureBox> candySameList = new List<PictureBox>();
             PictureBox firstCandy = new PictureBox();
-            int nHorizontalCandy = 0;
+            int nVerticalCandy = 0;
             int x1 = 100;
             int x2 = 200;
             int i = 0;
@@ -286,14 +307,15 @@ namespace Candy_Crush
                 foreach (PictureBox candy in candyList)
                 {
                     i++;
-                    if (nHorizontalCandy == 6 && candySameList.Count < 3)
+                    if (nVerticalCandy == 6 && candySameList.Count < 3)
                     {
                         x1 = x2;
                         x2 += 70;
-                        nHorizontalCandy = 0;
+                        nVerticalCandy = 0;
                         candySameList.Clear();
+                        break;
                     }
-                    else if (nHorizontalCandy == 6 && candySameList.Count >= 3)
+                    else if (nVerticalCandy == 6 && candySameList.Count >= 3)
                     {
                         x1 = x2;
                         x2 += 70;
@@ -306,13 +328,14 @@ namespace Candy_Crush
                         undoU = false;
                         undoR = false;
                         undoD = false;
-                        nHorizontalCandy = 0;
+                        nVerticalCandy = 0;
                         candySameList.Clear();
+                        break;
                     }
                     if (candy.Location.X > x1 && candy.Location.X < x2)
                     {
-                        nHorizontalCandy += 1;
-                        if (nHorizontalCandy == 1)
+                        nVerticalCandy += 1;
+                        if (nVerticalCandy == 1)
                         {
                             firstCandy.Tag = candy.Tag;
                         }
@@ -341,7 +364,7 @@ namespace Candy_Crush
                             candySameList.Clear();
                             firstCandy.Tag = candy.Tag;
                         }
-                        if (i == 36 && candySameList.Count >= 3)
+                        if (i == 216 && candySameList.Count >= 3)
                         {
                             SetCandies(candySameList);
                             playSound();
@@ -399,6 +422,9 @@ namespace Candy_Crush
             }
         }
 
+
+
+
         private void GameFrm_Load_1(object sender, EventArgs e)
         {
             initTimer();
@@ -410,10 +436,15 @@ namespace Candy_Crush
             scoreLbl.Text = $"Score : {score}";
         }
 
+
+
         //private void pictureBox1_Click(object sender, EventArgs e)
         //{
             
         //}
+
+
+
 
         private void playSound()
         {
@@ -422,6 +453,8 @@ namespace Candy_Crush
             musicPlayer.SoundLocation = path;
             musicPlayer.Play();
         }
+
+
 
 
         private void SetScore(List<PictureBox> sameCandyList)
@@ -444,21 +477,30 @@ namespace Candy_Crush
             }
         }
 
+
+
+
         private void rearrengeBtn_Click(object sender, EventArgs e)
         {
             var candyList = this.Controls.OfType<PictureBox>().Where(w => w.Name.StartsWith("candy")).ToList();
             SetCandies(candyList);
         }
 
+
+
         private void rearrengeBtn_MouseEnter(object sender, EventArgs e)
         {
             rearrengeBtn.Scale(1.02f);
         }
 
+
+
         private void rearrengeBtn_MouseLeave(object sender, EventArgs e)
         {
             rearrengeBtn.Scale(1 / 1.02f);
         }
+
+
 
         private void timerTmr_Tick(object sender, EventArgs e)
         {
@@ -474,6 +516,9 @@ namespace Candy_Crush
             }
         }
 
+
+
+
         private void SetWin()
         {
             if(score >= 100 && oneTimeWin == true)
@@ -485,6 +530,9 @@ namespace Candy_Crush
                 winForm.ShowDialog();
             }
         }
+
+
+
         private void SetLose()
         {
             LoseFrm loseForm = new LoseFrm();

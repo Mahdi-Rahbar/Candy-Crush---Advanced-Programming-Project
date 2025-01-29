@@ -25,6 +25,9 @@ namespace Candy_Crush
             this.Username = username;
             this.Password = password;
         }
+
+
+
         public static bool PlayerFinder(string username)
         {
             DataBase dataBase = new DataBase();
@@ -37,6 +40,10 @@ namespace Candy_Crush
             }
             return false;
         }
+
+
+
+
         public static bool PlayerFinder(string username, string password)
         {
             DataBase dataBase = new DataBase();
@@ -50,6 +57,8 @@ namespace Candy_Crush
             return false;
         }
 
+
+
         public static void SetPlayerGame(string username)
         {
             DataBase dataBase = new DataBase();
@@ -62,6 +71,8 @@ namespace Candy_Crush
                 }
             }
         }
+
+
 
         public static void SetPlayerWin(string username, int score)
         {
@@ -77,6 +88,9 @@ namespace Candy_Crush
             }
         }
 
+
+
+
         public static void SetPlayerLose(string username)
         {
             DataBase dataBase = new DataBase();
@@ -89,6 +103,8 @@ namespace Candy_Crush
                 }
             }
         }
+
+
 
         //public static int ReturnPlayerId(string username)
         //{

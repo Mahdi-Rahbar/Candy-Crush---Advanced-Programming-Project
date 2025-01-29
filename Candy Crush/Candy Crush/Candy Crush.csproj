@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Candy.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="GameFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +71,7 @@
     <Compile Include="LoseFrm.Designer.cs">
       <DependentUpon>LoseFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Match.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerMenuFrm.cs">
       <SubType>Form</SubType>

@@ -36,6 +36,8 @@ namespace Candy_Crush
         private void signInBtn_Click(object sender, EventArgs e)
         {
             SignInPlayer();
+
+
             //var q = db.players.Where(w => w.Username == "trf");
             //foreach (var item in q.ToList())
             //{

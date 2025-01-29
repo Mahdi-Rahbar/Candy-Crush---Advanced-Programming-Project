@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Candy_Crush
 {
@@ -22,6 +23,7 @@ namespace Candy_Crush
         {
             SetFormLocation();
             playerNameLbl.Text = $"Hi {playerName} !";
+            PlayMusicOfBackground();
         }
         private void SetFormLocation() => this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
 
@@ -58,6 +60,7 @@ namespace Candy_Crush
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+            StopMusicOfBackground();
         }
 
         private void playBtn_Click(object sender, EventArgs e)
@@ -70,5 +73,22 @@ namespace Candy_Crush
 
 
         }
+
+        private void PlayMusicOfBackground()
+        {
+            string path = @"E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Assets\Candy Crush Background Music.wav";
+            SoundPlayer musicPlayer = new SoundPlayer();
+            musicPlayer.SoundLocation = path;
+            musicPlayer.PlayLooping();
+        }
+
+        private void StopMusicOfBackground()
+        {
+            string path = @"E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Assets\Candy Crush Background Music.wav";
+            SoundPlayer musicPlayer = new SoundPlayer();
+            musicPlayer.SoundLocation = path;
+            musicPlayer.Stop();
+        }
+
     }
 }

@@ -23,15 +23,20 @@ namespace Candy_Crush
             SetFormLocation();
             SetSignUpBtnLocation();
             SetSignInBtnLocation();
-            PlayMusicOfBackground();
+            //PlayMusicOfBackground();
         }
-        private void PlayMusicOfBackground()
-        {
-            string path = @"E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Assets\Candy Crush Background Music.wav";
-            SoundPlayer musicPlayer = new SoundPlayer();
-            musicPlayer.SoundLocation = path;
-            musicPlayer.PlayLooping();
-        }
+
+
+        //private void PlayMusicOfBackground()
+        //{
+        //    string path = @"E:\Daneshgah\Advanced Programming\4\Candy Crush\final-project-candy-crush-Mahdi-Rahbar\Assets\Candy Crush Background Music.wav";
+        //    SoundPlayer musicPlayer = new SoundPlayer();
+        //    musicPlayer.SoundLocation = path;
+        //    musicPlayer.PlayLooping();
+        //}
+
+
+
         private void SetSignUpBtnLocation()
         {
             signUPBtn.Parent = signUpOrInFrame;
